@@ -103,25 +103,25 @@ const CompetitiveProgramming: React.FC = () => {
   const platforms = [
     {
       name: "LeetCode",
-      username: "bsirish",
+      username: "akanksha_254",
       stats: [
-        { label: "Problems Solved", value: "350+" },
+        { label: "Problems Solved", value: "15+" },
         { label: "Contest Rating", value: "1850" },
-        { label: "Global Rank", value: "Top 5%" },
+        { label: "Global Rank", value: "3,650,714" },
         { label: "Badges Earned", value: "8" }
       ],
       achievements: [
-        "Solved all Top 100 Interview Problems",
+        "Solved Interview Problems",
         "Knight Badge in Weekly Contests",
         "Completed Dynamic Programming Study Plan",
         "Participated in 25+ contests with consistent performance"
       ],
       icon: <Code size={24} />,
-      url: "https://leetcode.com/bsirish"
+      url: "https://leetcode.com/u/akanksha_254/"
     },
     {
       name: "Codeforces",
-      username: "bsirish",
+      username: "akanksha2207",
       stats: [
         { label: "Rating", value: "1750" },
         { label: "Max Rating", value: "1823" },
@@ -135,7 +135,7 @@ const CompetitiveProgramming: React.FC = () => {
         "Top 100 in Educational Round #110"
       ],
       icon: <Users size={24} />,
-      url: "https://codeforces.com/profile/bsirish"
+      url: "https://codeforces.com/profile/akanksha2207"
     }
   ];
 

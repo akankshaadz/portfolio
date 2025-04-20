@@ -99,28 +99,28 @@ const Extracurriculars: React.FC = () => {
         "Built a following of 500+ readers"
       ]
     },
-    {
-      title: "Cultural Exchange Program",
-      description: "Participated in a semester-long cultural exchange program with international engineering students.",
-      icon: <Globe size={24} />,
-      period: "Fall 2022",
-      details: [
-        "Collaborated with students from 5 different countries",
-        "Shared technical knowledge and cultural perspectives",
-        "Developed global communication skills"
-      ]
-    },
-    {
-      title: "Community Service",
-      description: "Volunteer teaching basic programming and electronics to underprivileged students in local schools.",
-      icon: <Heart size={24} />,
-      period: "2023 - Present",
-      details: [
-        "Weekly 2-hour sessions with students aged 12-15",
-        "Developed custom curriculum using affordable components",
-        "Mentored 30+ students in basic coding skills"
-      ]
-    }
+    // {
+    //   title: "Cultural Exchange Program",
+    //   description: "Participated in a semester-long cultural exchange program with international engineering students.",
+    //   icon: <Globe size={24} />,
+    //   period: "Fall 2022",
+    //   details: [
+    //     "Collaborated with students from 5 different countries",
+    //     "Shared technical knowledge and cultural perspectives",
+    //     "Developed global communication skills"
+    //   ]
+    // },
+    // {
+    //   title: "Community Service",
+    //   description: "Volunteer teaching basic programming and electronics to underprivileged students in local schools.",
+    //   icon: <Heart size={24} />,
+    //   period: "2023 - Present",
+    //   details: [
+    //     "Weekly 2-hour sessions with students aged 12-15",
+    //     "Developed custom curriculum using affordable components",
+    //     "Mentored 30+ students in basic coding skills"
+    //   ]
+    // }
   ];
 
   const skillsGained = [

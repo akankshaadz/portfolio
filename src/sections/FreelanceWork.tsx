@@ -140,40 +140,40 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 const FreelanceWork: React.FC = () => {
   const projects = [
     {
-      title: "E-commerce Website Redesign",
+      title: "Restaurants website",
       description: "Completely revamped the user interface and checkout flow for an established online retailer, resulting in a 35% increase in conversion rate.",
-      client: "StyleHub Boutique",
+      client: "Brew and Bites Cafe",
       skills: ["UI/UX Design", "React", "Shopify Integration", "Payment Gateway"],
-      imageUrl: "https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      // imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2rIcpAYAqgW_y_BSQUZTcyyx42h3HRj3hmnLaHkKvMFkLNUN0Bq_4-HaOnYgYaY65Hn0&usqp=CAU"
     },
     {
       title: "Custom Inventory Management System",
       description: "Developed a specialized inventory management system for a small manufacturing business to track materials, production status, and finished goods.",
       client: "CraftWorks Industries",
       skills: ["Full-stack Development", "Database Design", "Process Automation"],
-      imageUrl: "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      // imageUrl: "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
-    {
-      title: "IoT Home Monitoring Application",
-      description: "Created a mobile application that interfaces with custom IoT devices to monitor home energy usage, security, and environmental conditions.",
-      client: "SmartHome Solutions",
-      skills: ["Mobile Development", "IoT Integration", "Real-time Data", "Embedded Systems"],
-      imageUrl: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    }
+    // {
+    //   title: "IoT Home Monitoring Application",
+    //   description: "Created a mobile application that interfaces with custom IoT devices to monitor home energy usage, security, and environmental conditions.",
+    //   client: "SmartHome Solutions",
+    //   skills: ["Mobile Development", "IoT Integration", "Real-time Data", "Embedded Systems"],
+    //   imageUrl: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    // }
   ];
 
   const testimonials = [
     {
-      quote: "B Sirish delivered our project on time and exceeded our expectations. His technical knowledge combined with design skills gave us exactly what we needed.",
-      author: "Sarah Johnson",
-      role: "CEO",
-      company: "StyleHub Boutique"
+      quote: "Akanksha delivered our project on time and exceeded our expectations. Her design skills combined with technical knowledge gave us exactly what we needed.",
+      author: "Verson",
+      role: "UI Designer",
+      company: "Brew and Bites"
     },
     {
-      quote: "Working with Sirish was a pleasure. He understood our unique requirements and delivered a system that has transformed our operations.",
-      author: "Michael Chen",
-      role: "Operations Manager",
-      company: "CraftWorks Industries"
+      quote: "Working with Akanksha was a pleasure. She understood our unique requirements and delivered a system that has transformed our operations.",
+      author: "Alok Shah",
+      role: "UI Designer",
+      company: "Verson"
     }
   ];
 

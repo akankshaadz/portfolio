@@ -104,34 +104,34 @@ const Hackathon: React.FC<HackathonProps> = ({
 const Hackathons: React.FC = () => {
   const hackathons = [
     {
-      name: "SIH 2023",
-      date: "September 2023",
+      name: "Apna College Hackathon",
+      date: "April 2024",
       role: "Full-stack Developer",
       project: "EcoTrack",
       description: "Developed a real-time environmental monitoring system using IoT sensors that alerts authorities about pollution levels and potential violations.",
-      result: "Finalist",
-      teamSize: 5,
+      result: "Qualified",
+      teamSize: 4,
       technologies: ["React", "Node.js", "MongoDB", "IoT", "TensorFlow"]
     },
     {
-      name: "HackNITR 4.0",
-      date: "March 2023",
+      name: "Smart India Hackathon",
+      date: "September 2024",
       role: "Hardware Integration Lead",
       project: "MedAssist",
       description: "Created a smart pill dispenser for elderly patients with medication reminders, dosage tracking, and caregiver notifications.",
-      result: "2nd Place",
-      teamSize: 4,
+      result: "Qualified",
+      teamSize: 6,
       technologies: ["Arduino", "React Native", "Firebase", "3D Printing"]
     },
-    {
-      name: "VIT Hackathon",
-      date: "November 2022",
-      role: "UI/UX Designer & Frontend",
-      project: "CampusConnect",
-      description: "Built a platform to facilitate resource sharing and collaboration between students across different colleges and universities.",
-      teamSize: 3,
-      technologies: ["Vue.js", "Firebase", "Figma", "TailwindCSS"]
-    }
+    // {
+    //   name: "VIT Hackathon",
+    //   date: "November 2022",
+    //   role: "UI/UX Designer & Frontend",
+    //   project: "CampusConnect",
+    //   description: "Built a platform to facilitate resource sharing and collaboration between students across different colleges and universities.",
+    //   teamSize: 3,
+    //   technologies: ["Vue.js", "Firebase", "Figma", "TailwindCSS"]
+    // }
   ];
 
   return (

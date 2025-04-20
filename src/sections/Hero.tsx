@@ -4,13 +4,13 @@ import { TypeAnimation } from 'react-type-animation';
 import { Github, Linkedin, Twitter, Mail, ArrowDown, Download } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  const profileImgUrl = "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600";
+  const profileImgUrl = "https://media.licdn.com/dms/image/v2/D4E03AQGq2ftVrhA5GQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669746185994?e=1750896000&v=beta&t=pvf6JvJeSnQbv3oYpZztdOeLWnzMq-n_ODdbDAvjLvg";
   
   const socialLinks = [
-    { icon: <Github size={18} />, href: 'https://github.com/akanksha', label: 'GitHub' },
-    { icon: <Linkedin size={18} />, href: 'https://linkedin.com/in/akanksha', label: 'LinkedIn' },
-    { icon: <Twitter size={18} />, href: 'https://twitter.com/akanksha', label: 'Twitter' },
-    { icon: <Mail size={18} />, href: 'mailto:contact@akanksha.dev', label: 'Email' },
+    { icon: <Github size={18} />, href: 'https://github.com/akankshaadz', label: 'GitHub' },
+    { icon: <Linkedin size={18} />, href: 'https://www.linkedin.com/in/22akanksha07/', label: 'LinkedIn' },
+    { icon: <Twitter size={18} />, href: 'https://x.com/KumariAkan19548', label: 'Twitter' },
+    { icon: <Mail size={18} />, href: 'mailto:aakankshaakkumarii@gmail.com', label: 'Email' },
   ];
 
   const scrollToProjects = () => {
@@ -31,6 +31,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className="z-10"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
               Hi, I'm{' '}

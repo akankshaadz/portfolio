@@ -8,22 +8,22 @@ const Footer: React.FC = () => {
   const socialLinks = [
     { 
       icon: <Github size={20} />, 
-      href: 'https://github.com/bsirish', 
+      href: 'https://github.com/akankshaadz', 
       label: 'GitHub' 
     },
     { 
       icon: <Linkedin size={20} />, 
-      href: 'https://linkedin.com/in/bsirish', 
+      href: 'https://www.linkedin.com/in/22akanksha07/', 
       label: 'LinkedIn' 
     },
     { 
       icon: <Twitter size={20} />, 
-      href: 'https://twitter.com/bsirish', 
+      href: 'https://x.com/KumariAkan19548', 
       label: 'Twitter' 
     },
     { 
       icon: <Mail size={20} />, 
-      href: 'mailto:contact@bsirish.com', 
+      href: 'mailto:aakankshaakkumarii@gmail.com', 
       label: 'Email' 
     },
   ];
@@ -33,9 +33,9 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
-            <h2 className="text-2xl font-bold text-light mb-2">B Sirish</h2>
+            <h2 className="text-2xl font-bold text-light mb-2">Akanksha</h2>
             <p className="text-light-300 max-w-md">
-              Electronics and Communication Engineer passionate about creating secure, performant web experiences.
+              Computer Science Engineer.
             </p>
           </div>
           
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
         
         <div className="mt-10 pt-6 border-t border-dark-300 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-light-300 text-sm">
-            © {currentYear} B Sirish. All rights reserved.
+            © {currentYear} Akanksha. All rights reserved.
           </p>
           
           <div className="mt-4 sm:mt-0 text-sm text-light-300 flex items-center">

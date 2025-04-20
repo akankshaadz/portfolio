@@ -15,7 +15,7 @@ interface HeaderProps {
 const navLinks: NavLink[] = [
   { id: 'home', label: 'Home' },
   { id: 'projects', label: 'Projects' },
-  { id: 'academic', label: 'Academic' },
+  { id: 'education', label: 'Education' },
   { id: 'freelance', label: 'Freelance' },
   { id: 'competitive', label: 'Competitive' },
   { id: 'hackathons', label: 'Hackathons' },

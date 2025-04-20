@@ -11,40 +11,40 @@ const Projects: React.FC = () => {
   });
 
   const projects = [
+    // {
+    //   title: "Movie Ticket Booking System",
+    //   description: "A Java-based system to book movie tickets, using OOP for managing movies, shows, and bookings.",
+    //   repoUrl: "https://github.com/akankshaadz/Movie-ticket-booking-java",
+    //   demoUrl: "https://ecommerce-platform.example.com",
+    //   technologies: ["Java"],
+    //   imageUrl: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //   personal: true
+    // },
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce platform with product listings, shopping cart, and payment integration.",
-      repoUrl: "https://github.com/bsirish/ecommerce-platform",
-      demoUrl: "https://ecommerce-platform.example.com",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      imageUrl: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      personal: true
-    },
-    {
-      title: "Task Management System",
-      description: "A collaborative task management system with real-time updates and team workflow features.",
-      repoUrl: "https://github.com/bsirish/task-management",
+      title: "Movie Ticket Booking System",
+      description: "A Java-based system to book movie tickets, using OOP for managing movies, shows, and bookings.",
+      repoUrl: "https://github.com/akankshaadz/Movie-ticket-booking-java",
       demoUrl: "https://task-management.example.com",
-      technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
+      technologies: ["Java"],
       imageUrl: "https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       personal: false
     },
-    {
-      title: "Weather Dashboard",
-      description: "A responsive weather application with forecast data, location search, and visual weather representations.",
-      repoUrl: "https://github.com/bsirish/weather-dashboard",
-      demoUrl: "https://weather-dashboard.example.com",
-      technologies: ["React", "OpenWeather API", "Chart.js"],
-      imageUrl: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      personal: true
-    },
+    // {
+    //   title: "Weather Dashboard",
+    //   description: "A responsive weather application with forecast data, location search, and visual weather representations.",
+    //   repoUrl: "https://github.com/akanksha/weather-dashboard",
+    //   demoUrl: "https://weather-dashboard.example.com",
+    //   technologies: ["React", "OpenWeather API", "Chart.js"],
+    //   imageUrl: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //   personal: true
+    // },
     {
       title: "Portfolio Website",
       description: "A responsive portfolio website showcasing skills, projects, and achievements with modern design principles.",
-      repoUrl: "https://github.com/bsirish/portfolio",
-      demoUrl: "https://bsirish.com",
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      imageUrl: "https://images.pexels.com/photos/251225/pexels-photo-251225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      repoUrl: "https://github.com/akankshaadz/portfolio",
+      demoUrl: "https://akanksha.com",
+      technologies: ["TypeScript", "Tailwind CSS", "Framer Motion"],
+      imageUrl: "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png",
       personal: true
     }
   ];
@@ -90,7 +90,7 @@ const Projects: React.FC = () => {
       
       <div className="mt-10 text-center">
         <a 
-          href="https://github.com/bsirish"
+          href="https://github.com/akankshaadz"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block text-accent-500 hover:text-accent-400 font-medium"

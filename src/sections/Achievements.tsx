@@ -15,7 +15,7 @@ const Achievements: React.FC = () => {
       title: "AWS Certified Solutions Architect",
       description: "Comprehensive certification validating expertise in designing distributed systems on AWS.",
       type: "certification",
-      date: "August 2023",
+      date: "November 2024",
       url: "https://www.credly.com/badges/example"
     },
     {
@@ -26,10 +26,10 @@ const Achievements: React.FC = () => {
       url: "https://www.credential.net/example"
     },
     {
-      title: "TensorFlow Developer Certificate",
-      description: "Demonstrates proficiency in using TensorFlow to solve deep learning and ML problems.",
+      title: "Microsoft Certified: Azure Administrator Associate",
+      description: "Validates skills in managing Azure resources, implementing and monitoring virtual networks, identities, storage, and compute services in Microsoft Azure.",
       type: "certification",
-      date: "November 2022",
+      date: "April 2025",
       url: "https://www.tensorflow.org/certificate"
     }
   ];
@@ -41,18 +41,18 @@ const Achievements: React.FC = () => {
       type: "award",
       date: "2021-2023"
     },
-    {
-      title: "Best Student Project Award",
-      description: "Awarded for outstanding innovation and execution in the annual ECE department project showcase.",
-      type: "award",
-      date: "May 2022"
-    },
-    {
-      title: "National Talent Scholarship",
-      description: "Selected among top 1% of applicants for academic achievement and leadership potential.",
-      type: "award",
-      date: "2020-2024"
-    }
+    // {
+    //   title: "Best Student Project Award",
+    //   description: "Awarded for outstanding innovation and execution in the annual ECE department project showcase.",
+    //   type: "award",
+    //   date: "May 2022"
+    // },
+    // {
+    //   title: "National Talent Scholarship",
+    //   description: "Selected among top 1% of applicants for academic achievement and leadership potential.",
+    //   type: "award",
+    //   date: "2020-2024"
+    // }
   ];
 
   const badges = [
