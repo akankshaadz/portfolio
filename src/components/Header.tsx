@@ -26,18 +26,15 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNavClick }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(true);
-  
-  // Monitor scroll position
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  
-  // Close mobile menu when clicking outside
+
   useEffect(() => {
     if (isMobileMenuOpen) {
       const handleClickOutside = (e: MouseEvent) => {
@@ -46,16 +43,15 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNavClick }) => {
           setIsMobileMenuOpen(false);
         }
       };
-      
       document.addEventListener('click', handleClickOutside);
       return () => document.removeEventListener('click', handleClickOutside);
     }
   }, [isMobileMenuOpen]);
-  
+
   const toggleMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-  
+
   const handleNavClick = (id: string) => {
     onNavClick(id);
     setIsMobileMenuOpen(false);
@@ -63,11 +59,10 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNavClick }) => {
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
-    // Dark mode is the default, so no actual functionality needed
   };
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-dark-300/80 backdrop-blur-lg shadow-lg' : 'bg-transparent'
       }`}
@@ -75,15 +70,15 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNavClick }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <motion.div 
+          <motion.div
             className="flex-shrink-0 font-mono font-bold text-xl text-accent-500"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-light">AK   </span>
+            <span className="text-light"><p></p></span>
           </motion.div>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
@@ -96,18 +91,18 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNavClick }) => {
               </button>
             ))}
           </nav>
-          
-          {/* Action Buttons */}
+
+          {/* Action Buttons (Desktop) */}
           <div className="hidden md:flex items-center space-x-4">
             <button
               className="button-outline text-sm"
-              onClick={() => window.open('/resume.pdf', '_blank')}
+              onClick={() => window.open('/akanksha_cv_final.pdf', '_blank')}
             >
               <Download size={16} />
               Resume
             </button>
-            
-            <button 
+
+            <button
               className="p-2 rounded-full bg-dark-400 hover:bg-dark-300 transition-colors"
               onClick={toggleDarkMode}
               aria-label="Toggle dark mode"
@@ -115,17 +110,17 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNavClick }) => {
               {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
             </button>
           </div>
-          
+
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center space-x-3">
-            <button 
+            <button
               className="p-2 rounded-full bg-dark-400 hover:bg-dark-300 transition-colors"
               onClick={toggleDarkMode}
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
             </button>
-            
+
             <button
               className="menu-button p-2 rounded-md text-light-300 hover:bg-dark-400 transition-colors"
               onClick={toggleMenu}
@@ -136,14 +131,14 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNavClick }) => {
           </div>
         </div>
       </div>
-      
+
       {/* Mobile Navigation */}
-      <motion.div 
+      <motion.div
         className={`mobile-menu md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}
         initial={{ opacity: 0, height: 0 }}
-        animate={{ 
+        animate={{
           opacity: isMobileMenuOpen ? 1 : 0,
-          height: isMobileMenuOpen ? 'auto' : 0
+          height: isMobileMenuOpen ? 'auto' : 0,
         }}
         transition={{ duration: 0.3 }}
       >
@@ -153,8 +148,8 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNavClick }) => {
               <button
                 key={link.id}
                 className={`py-3 px-4 rounded-md ${
-                  activeSection === link.id 
-                    ? 'bg-accent-500/10 text-accent-500' 
+                  activeSection === link.id
+                    ? 'bg-accent-500/10 text-accent-500'
                     : 'text-light-300 hover:bg-dark-400'
                 } transition-colors`}
                 onClick={() => handleNavClick(link.id)}
@@ -162,9 +157,10 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNavClick }) => {
                 {link.label}
               </button>
             ))}
+
             <button
               className="mt-2 py-3 px-4 text-accent-500 border border-accent-500 rounded-md flex items-center justify-center gap-2"
-              onClick={() => window.open('/resume.pdf', '_blank')}
+              onClick={() => window.open('/akanksha_cv_final.pdf', '_blank')}
             >
               <Download size={16} />
               Download Resume
